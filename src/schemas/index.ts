@@ -1,0 +1,6 @@
+export * from '../db/generateTable'
+export * from './comments.table'
+export * from './log.table'
+export * from './shared.table'
+export * from './user.table'
+export * from './jobs.table'

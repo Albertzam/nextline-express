@@ -1,0 +1,30 @@
+import { HttpStatus } from '../../common'
+
+export enum ErrorCodesApi {
+  USER_NOT_FOUND = 'USER_NOT_FOUND',
+  USER_ERROR_VALUES = 'USER_ERROR_VALUES',
+  USER_ALREADY_EXISTS = 'USER_ALREADY_EXISTS',
+  USER_ALREADY_DELETED = 'USER_ALREADY_DELETED',
+  JOB_NOT_FOUND = 'JOB_NOT_FOUND',
+  JOB_ALREADY_EXISTS = 'JOB_ALREADY_EXISTS',
+  JOB_ALREADY_DELETED = 'JOB_ALREADY_DELETED',
+}
+
+export enum GeneralErrorCodes {
+  UNKNOWN = 'UNKNOWN',
+  REQUEST_TIMEOUT = 'ETIMEDOUT',
+  UNAUTHORIZED = 'UNAUTHORIZED',
+  FORBIDDEN = 'FORBIDDEN',
+}
+
+export const UserErrorHttpStatus: {
+  [x: string]: HttpStatus
+} = {
+  [ErrorCodesApi.USER_NOT_FOUND]: HttpStatus.NOT_FOUND,
+  [ErrorCodesApi.USER_ALREADY_EXISTS]: HttpStatus.CONFLICT,
+  [ErrorCodesApi.USER_ALREADY_DELETED]: HttpStatus.BAD_REQUEST,
+  [ErrorCodesApi.USER_ERROR_VALUES]: HttpStatus.UNAUTHORIZED,
+  [ErrorCodesApi.JOB_NOT_FOUND]: HttpStatus.NOT_FOUND,
+  [ErrorCodesApi.JOB_ALREADY_EXISTS]: HttpStatus.CONFLICT,
+  [ErrorCodesApi.JOB_ALREADY_DELETED]: HttpStatus.BAD_REQUEST,
+}
