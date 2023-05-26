@@ -31,7 +31,12 @@ router.delete(
   deleteJobController
 )
 
-router.get('/find-all', AuthMiddleware(), findAllJobController)
+router.get(
+  '/find-all',
+  AuthMiddleware(),
+  ValidateMiddleware(DTO.JobsPaginate),
+  findAllJobController
+)
 
 router.get(
   '/find-one',

@@ -153,11 +153,9 @@ class JobService {
     return exist
   }
 
-  async findAll(userId: number): Promise<Array<DTO.JobResponse>> {
-    const aux = 1
-    const limit = 10
-    const page = aux - 1
-    const offset = page * limit
+  async findAll(data: DTO.JobsPaginate): Promise<Array<DTO.JobResponse>> {
+    const page = data.page - 1
+    const offset = page * data.limit
     return await connection.query(
       ` SELECT jobs.id, jobs.title, jobs.description, jobs.status, jobs.submittedAt, jobs.manager,
           IFNULL((SELECT COUNT(comments.comment)
@@ -170,8 +168,8 @@ class JobService {
           LEFT JOIN user AS manager ON jobs.manager = manager.id
           WHERE (jobs.status != ? ) AND (shared.user_id = ? OR  jobs.createdBy = ? OR jobs.isPublic = 1)
           GROUP BY jobs.id
-          LIMIT ${limit} OFFSET ${offset}`,
-      [STATUS_DB.ELIMINATED, userId, userId]
+          LIMIT ${data.limit} OFFSET ${offset}`,
+      [STATUS_DB.ELIMINATED, data.userId, data.userId]
     )
   }
 }

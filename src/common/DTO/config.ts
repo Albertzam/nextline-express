@@ -17,12 +17,15 @@ export class ConfigEnv {
   @IsNotEmpty()
   @IsString()
   PASSWORD_MYSQL: string
+
   @IsNotEmpty()
   @IsString()
   USER_MYSQL: string
+
   @IsNotEmpty()
   @IsString()
   HOST_MYSQL: string
+
   @IsNotEmpty()
   @IsString()
   DATABASE_MYSQL: string
