@@ -10503,3 +10503,49 @@
 {"level":"debug","message":"Table already exists: comments"}
 {"level":"debug","message":"Table already exists: log"}
 {"level":"info","message":"998491 Express is listening on http://localhost:4002"}
+{"level":"info","message":"register code USER_NOT_FOUND status 404"}
+{"level":"info","message":"register code USER_ALREADY_EXISTS status 409"}
+{"level":"info","message":"register code USER_ALREADY_DELETED status 400"}
+{"level":"info","message":"register code USER_ERROR_VALUES status 401"}
+{"level":"info","message":"register code JOB_NOT_FOUND status 404"}
+{"level":"info","message":"register code JOB_ALREADY_EXISTS status 409"}
+{"level":"info","message":"register code JOB_ALREADY_DELETED status 400"}
+{"level":"debug","message":"Table already exists: jobs"}
+{"level":"debug","message":"Table already exists: user"}
+{"level":"debug","message":"Table already exists: shared"}
+{"level":"debug","message":"Table already exists: comments"}
+{"level":"debug","message":"Table already exists: log"}
+{"level":"info","message":"15967 Express is listening on http://localhost:4002"}
+{"http":{"method":"POST","query":"{}","url":"/user/login"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"http":{"status_code":200,"url":"/user/login"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"http":{"method":"POST","query":"{}","url":"/product/register"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"error":{"message":["submittedAt must be a valid ISO 8601 date string","submittedAt should not be empty"],"name":"class-validator","stack":"class-validator: [\"submittedAt must be a valid ISO 8601 date string\",\"submittedAt should not be empty\"]\n    at new BadRequest (/home/developer/Documents/prueba-nextia/src/middlewares/errors/class-validator.ts:7:5)\n    at /home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:28:12\n    at step (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:33:23)\n    at Object.next (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:14:53)\n    at fulfilled (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","status":400},"http":{"status_code":400},"level":"error","message":"Bad Request"}
+{"http":{"status_code":400,"url":"/product/register"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"http":{"method":"POST","query":"{}","url":"/product/register"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"http":{"status_code":100,"url":"/product/register"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"http":{"method":"GET","query":"{}","url":"/product/find-all"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"error":{"message":["page should not be empty","page must not be less than 1","page must be an integer number","limit should not be empty","limit must not be less than 1","limit must be an integer number"],"name":"class-validator","stack":"class-validator: [\"page should not be empty\",\"page must not be less than 1\",\"page must be an integer number\",\"limit should not be empty\",\"limit must not be less than 1\",\"limit must be an integer number\"]\n    at new BadRequest (/home/developer/Documents/prueba-nextia/src/middlewares/errors/class-validator.ts:7:5)\n    at /home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:28:12\n    at step (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:33:23)\n    at Object.next (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:14:53)\n    at fulfilled (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","status":400},"http":{"status_code":400},"level":"error","message":"Bad Request"}
+{"http":{"status_code":400,"url":"/product/find-all"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"http":{"method":"GET","query":"{\"page\":\"1\",\"limit\":\"10\"}","url":"/product/find-all?page=1&limit=10"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"error":{"message":["page must not be less than 1","page must be an integer number","limit must not be less than 1","limit must be an integer number"],"name":"class-validator","stack":"class-validator: [\"page must not be less than 1\",\"page must be an integer number\",\"limit must not be less than 1\",\"limit must be an integer number\"]\n    at new BadRequest (/home/developer/Documents/prueba-nextia/src/middlewares/errors/class-validator.ts:7:5)\n    at /home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:28:12\n    at step (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:33:23)\n    at Object.next (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:14:53)\n    at fulfilled (/home/developer/Documents/prueba-nextia/src/middlewares/class-validator/validate.middleware.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","status":400},"http":{"status_code":400},"level":"error","message":"Bad Request"}
+{"http":{"status_code":400,"url":"/product/find-all?page=1&limit=10"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"level":"info","message":"register code USER_NOT_FOUND status 404"}
+{"level":"info","message":"register code USER_ALREADY_EXISTS status 409"}
+{"level":"info","message":"register code USER_ALREADY_DELETED status 400"}
+{"level":"info","message":"register code USER_ERROR_VALUES status 401"}
+{"level":"info","message":"register code JOB_NOT_FOUND status 404"}
+{"level":"info","message":"register code JOB_ALREADY_EXISTS status 409"}
+{"level":"info","message":"register code JOB_ALREADY_DELETED status 400"}
+{"level":"debug","message":"Table already exists: jobs"}
+{"level":"debug","message":"Table already exists: user"}
+{"level":"debug","message":"Table already exists: shared"}
+{"level":"debug","message":"Table already exists: comments"}
+{"level":"debug","message":"Table already exists: log"}
+{"level":"info","message":"16548 Express is listening on http://localhost:4002"}
+{"http":{"method":"GET","query":"{\"page\":\"1\",\"limit\":\"10\"}","url":"/product/find-all?page=1&limit=10"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"http":{"status_code":200,"url":"/product/find-all?page=1&limit=10"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"http":{"method":"GET","query":"{\"id\":\"26\"}","url":"/product/find-one?id=26"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"error":{"code":"JOB_NOT_FOUND","message":"Job not found","name":"nextLine","stack":"nextLine: Job not found"},"level":"error","message":"Job not found"}
+{"http":{"status_code":404,"url":"/product/find-one?id=26"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
+{"http":{"method":"GET","query":"{\"id\":\"28\"}","url":"/product/find-one?id=28"},"level":"info","message":"http request received","network":{"client":{"ip":"::1"}}}
+{"http":{"status_code":200,"url":"/product/find-one?id=28"},"level":"info","message":"http request finished","network":{"client":{"ip":"::1"}}}
